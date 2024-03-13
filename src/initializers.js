@@ -6,3 +6,10 @@ export function todoInit(title, description, dueDate, priority) {
     priority,
   };
 }
+
+export function projectInit(title, todoList) {
+  return {
+    title,
+    todoList,
+  };
+}

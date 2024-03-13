@@ -8,7 +8,45 @@ body {
 }
 
 .navbar {
-  height: 150px;
+  height: 100px;
   width: 100vw;
   border: 2px solid black;
+}
+
+.todos {
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todos div {
+  border: 2px solid black;
+  height: 50px;
+  width: 200px;
+}
+
+.projects div {
+  border: 2px solid black;
+  height: 50px;
+  width: 150px;
+}
+
+.projects {
+  display: flex;
+  position: relative;
+  padding: 50px 50px;
+  justify-content: space-around;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 50px;
+}
+
+.new-project-button {
+  height: 50px;
+  width: 50px;
 }
