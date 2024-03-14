@@ -1,44 +1,47 @@
 import { todoInit, projectInit } from "./initializers";
+import { addDays, format } from "date-fns";
+
+const date = new Date();
 
 const todoItem = todoInit(
   "Cook Lunch",
   "Prepare vegetables, sauce, and cook meat.",
-  "March 11, 2024, 12pm",
+  format(addDays(date, 1), "MMM dd, yyyy"),
   "Urgent"
 );
 
 const todoItem2 = todoInit(
   "Bake Cake",
   "Bake strawberry cake to give to friend over the weekend.",
-  "March 17, 2024, 12pm",
+  format(addDays(date, 6), "MMM dd, yyyy"),
   "Not Urgent"
 );
 
 const todoItem3 = todoInit(
-  "Submit Biology Homework",
+  "Submit Biology HW",
   "Finish exercises on page 25.",
-  "March 11, 2024, 1pm",
+  format(addDays(date, 1), "MMM dd, yyyy"),
   "Emergency"
 );
 
 const todoItem4 = todoInit(
   "Text Friends",
   "Host an event this weekend.",
-  "March 16, 2024, 3pm",
+  format(addDays(date, 4), "MMM dd, yyyy"),
   "Urgent"
 );
 
 const todoItem5 = todoInit(
   "Write song",
   "Write a song over the weekend for new album.",
-  "March 16, 2024, 9am",
+  format(addDays(date, 5), "MMM dd, yyyy"),
   "Not Urgent"
 );
 
 const todoItem6 = todoInit(
   "Record Music",
   "Come to recording studio to record a song.",
-  "March 19, 2024, 4pm",
+  format(addDays(date, 7), "MMM dd, yyyy"),
   "Not Urgent"
 );
 
